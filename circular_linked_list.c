@@ -46,9 +46,11 @@ int main()
 		if(head == NULL)
 		printf("LIST_IS_EMPTY\n");
 		Slist *temp = head;
-		for(int i=0;temp != NULL;i++)
+                int i = 0;
+		do
 		{
 				printf("node[%d] = %c\n", i, temp->n_data);
 				temp = temp->link;
-		}
+                                i++;
+		}while(temp != head);
 }
